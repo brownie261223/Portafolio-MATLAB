@@ -6,15 +6,17 @@ Three academic projects from IF321 Numerical Methods in the Physical Engineering
 
 | Project | Method | Reference result |
 | --- | --- | --- |
-| **Hydrogen Stark Effect** | Assemble a finite Hamiltonian for the `m = 0` sector and compute its eigenvalues with Jacobi rotations. | The two `n = 2` levels are separated by **0.06351 eV** at `2 × 10⁸ V/m` in the `nmax = 4` model. |
-| **Luminescence Decay Fit** | Fit an exponential to six coursework observations with Gauss–Newton and examine the residuals. | The fitted decay rate is **0.89425 ms⁻¹**, with an in-sample RMSE of **0.00909 a.u.** |
-| **Jacobi and Gauss–Seidel** | Compare iteration counts, spectral radii, and errors against a direct solution. | In the baseline case, Gauss–Seidel met the same step tolerance in **135 iterations**, compared with **247** for Jacobi. |
+| [**Hydrogen Stark Effect**](./hydrogen-stark-effect-matlab/) | Assemble a finite Hamiltonian for the `m = 0` sector and compute its eigenvalues with Jacobi rotations. | The two `n = 2` levels are separated by **0.06351 eV** at `2 × 10⁸ V/m` in the `nmax = 4` model. |
+| [**Luminescence Decay Fit**](./luminescence-decay-fit-matlab/) | Fit an exponential to six coursework observations with Gauss–Newton and examine the residuals. | The fitted decay rate is **0.89425 ms⁻¹**, with an in-sample RMSE of **0.00909 a.u.** |
+| [**Jacobi and Gauss–Seidel**](./iterative-linear-solvers-matlab/) | Compare iteration counts, spectral radii, and errors against a direct solution. | In the baseline case, Gauss–Seidel met the same step tolerance in **135 iterations**, compared with **247** for Jacobi. |
 
 ## Run the examples
 
-1. Download and extract [Portafolio-MATLAB.zip](./Portafolio-MATLAB.zip).
-2. In MATLAB, set the current folder to one of the three extracted project folders.
-3. Run the following command:
+Open any project above to browse its MATLAB source in `src/`, view the figure, or read its documentation.
+
+1. Clone this repository or download and extract [Portafolio-MATLAB.zip](./Portafolio-MATLAB.zip).
+2. In MATLAB, set the current folder to the project you want to run.
+3. Run the example:
 
    ```matlab
    run_demo
